@@ -39,7 +39,13 @@ ADRs are stored in your project as Markdown files in the `doc/adr` directory.
     superceded by the new ADR.  It then opens the new ADR in your
     editor of choice.
     
-3. For further information, use the built in help:
+3. To list existing adr records:
+
+        adr list
+
+    This will also indicate whether a record is deprecated.
+
+4. For further information, use the built in help:
 
         adr help
 
