@@ -298,7 +298,7 @@
 
         public void Write(string path)
         {
-            using (StreamWriter sr = new StreamWriter(Path.Combine(path, FileName.ToLower())))
+            using (StreamWriter sr = new StreamWriter(Path.Combine(path, FileName.ToLower()), false, Encoding.UTF8))
             {
                 sr.WriteLine($"# {Number}. {Title}\r\n");
                 sr.WriteLine($"Date: {DateTime.Now.ToString("dd/MM/yyyy")}\r\n");
